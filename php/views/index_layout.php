@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?= $pageTitle; ?></title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+    </script>
 </head>
 <body>
     <main>
@@ -22,6 +24,7 @@
                 </li>
             <?php endforeach ?>
         </ul>
+        <a href="http://rolladie.net" target="_blank">Tärning</a> 
     </main>
 </body>
 </html>
