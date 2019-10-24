@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?= $pageTitle; ?></title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    </script>
 </head>
 <body>
     <main>
@@ -24,7 +22,22 @@
                 </li>
             <?php endforeach ?>
         </ul>
-        <a href="http://rolladie.net" target="_blank">Tärning</a> 
+        <p id="resultat"></p>
+        <button id="rulla"> Rulla tärning </button>
     </main>
+    <script>
+        function random(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        let button = document.getElementById("rulla");
+        let text = document.getElementById("resultat");
+
+        button.addEventListener("click", function() {
+            let rull = random(1, 7);
+            text.textContent = rull;
+        }, false);
+
+    </script>
 </body>
 </html>
